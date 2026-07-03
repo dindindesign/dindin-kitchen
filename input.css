@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #211C16;
+  --color-inkmute: #4A4137;
+  --color-paper: #F6F1E7;
+  --color-paperdim: #EDE5D4;
+  --color-paprika: #BE4B2A;
+  --color-paprikad: #8F3820;
+  --color-saffron: #E4A23A;
+  --color-sage: #707B5F;
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

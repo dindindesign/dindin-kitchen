@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dindin Kitchen — Modern Supper Club & Seasonal Table</title>
+  <meta name="description"
+    content="Seasonal plates, open kitchen, intimate dining. Reserve your table at Dindin Kitchen Bandung.">
+  <meta name="keywords"
+    content="Dindin Kitchen, restaurant, supper club, seasonal menu, fine dining, reservations, local ingredients">
+  <meta name="author" content="Dindin Kitchen">
+  <link rel="canonical" href="https://www.dindinkitchen.com/">
+
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="Dindin Kitchen — Modern Supper Club & Seasonal Table">
+  <meta property="og:description"
+    content="Seasonal plates, an open kitchen, and a table worth lingering at. Explore the Dindin Kitchen menu and reserve your night.">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop&q=80">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.dindinkitchen.com/">
+  <meta property="og:site_name" content="Dindin Kitchen">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dindin Kitchen — Modern Supper Club & Seasonal Table">
+  <meta name="twitter:description" content="Seasonal plates, an open kitchen, and a table worth lingering at.">
+  <meta name="twitter:image"
+    content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop&q=80">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%23BE4B2A%22/><text x=%2212%22 y=%2217%22 font-size=%2214%22 text-anchor=%22middle%22 fill=%22%23F6F1E7%22 font-family=%22Georgia%22>D</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Dindin Kitchen",
+    "servesCuisine": "Modern Seasonal",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "48 Marlow Lane",
+      "addressLocality": "Bandung",
+      "addressRegion": "West Java",
+      "addressCountry": "ID"
+    },
+    "telephone": "+62-22-555-0148",
+    "openingHours": "Tu-Su 17:00-23:00"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    [x-cloak] {
+      display: none !important;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #211C16;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #BE4B2A;
+      border-radius: 3px;
+    }
+
+    .leader-row-light,
+    .leader-row-dark {
+      display: block;
+      height: 3px;
+      align-self: flex-end;
+      margin-bottom: 0.4em;
+      margin-right: 0.625rem;
+      background-repeat: repeat-x;
+      background-position: left center;
+      background-size: 7px 3px;
+    }
+
+    .leader-row-light {
+      background-image: radial-gradient(circle, rgba(190, 75, 42, 0.55) 1.3px, transparent 1.3px);
+    }
+
+    .leader-row-dark {
+      background-image: radial-gradient(circle, rgba(228, 162, 58, 0.65) 1.3px, transparent 1.3px);
+    }
+
+    ::selection {
+      background-color: #E4A23A;
+      color: #211C16;
+    }
+
+    :focus-visible {
+      outline: 2px solid #BE4B2A;
+      outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+
+    .link-underline {
+      position: relative;
+    }
+
+    .link-underline::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: currentColor;
+      transition: width 0.3s ease;
+    }
+
+    .link-underline:hover::after {
+      width: 100%;
+    }
+
+    .card-lift {
+      transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+    }
+
+    .card-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-reveal {
+      overflow: hidden;
+    }
+
+    .image-reveal img {
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .image-reveal:hover img {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulseSoft {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .animate-slide-up {
+      animation: slideUp 0.8s ease-out;
+    }
+
+    .animate-pulse-soft {
+      animation: pulseSoft 2s ease-in-out infinite;
+    }
+  </style>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="font-body text-ink antialiased bg-paper"
+  x-data="{ mobileNavOpen: false, menuDropdownOpen: false, scrolled: false }"
+  x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 40 })">
+
+  <a href="#main"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-100 focus:bg-paprika focus:text-paper focus:px-4 focus:py-2 focus:rounded">Skip
+    to content</a>
+
+  <!-- Header -->
+  <header class="fixed top-0 inset-x-0 z-50 transition-all duration-500"
+    :class="scrolled ? 'bg-paper/90 backdrop-blur-xl shadow-sm' : 'bg-transparent'">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="flex items-center justify-between h-20">
+
+        <a href="#main" class="flex items-center gap-2 group">
+          <span class="font-display text-2xl tracking-tight transition-colors duration-300"
+            :class="scrolled ? 'text-ink' : 'text-paper'">
+            Dindin <span class="italic text-paprika">Kitchen</span>
+          </span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-10" aria-label="Primary">
+          <a href="#story" class="text-sm font-medium tracking-wide transition-colors duration-300 link-underline"
+            :class="scrolled ? 'text-inkmute hover:text-ink' : 'text-paper/85 hover:text-paper'">Story</a>
+
+          <div class="relative" @click.outside="menuDropdownOpen = false" @keydown.escape="menuDropdownOpen = false">
+            <button type="button"
+              class="flex items-center gap-1.5 text-sm font-medium tracking-wide transition-colors duration-300"
+              :class="scrolled ? 'text-inkmute hover:text-ink' : 'text-paper/85 hover:text-paper'"
+              @click="menuDropdownOpen = !menuDropdownOpen" :aria-expanded="menuDropdownOpen.toString()"
+              aria-haspopup="true">
+              Menu
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 transition-transform duration-300"
+                :class="menuDropdownOpen && 'rotate-180'" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div x-cloak x-show="menuDropdownOpen" x-transition:enter="transition ease-out duration-200"
+              x-transition:enter-start="opacity-0 translate-y-2 scale-95"
+              x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+              x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100"
+              x-transition:leave-end="opacity-0"
+              class="absolute left-1/2 -translate-x-1/2 mt-4 w-56 rounded-xl bg-ink/95 backdrop-blur-md text-paper shadow-2xl ring-1 ring-white/10 overflow-hidden">
+              <div class="py-1">
+                <a href="#menu" @click="menuDropdownOpen = false"
+                  class="flex items-center gap-2 px-5 py-3.5 text-sm hover:bg-white/10 transition-colors duration-200"><span
+                    class="w-1 h-1 rounded-full bg-saffron"></span> Dinner Plates</a>
+                <a href="#menu" @click="menuDropdownOpen = false"
+                  class="flex items-center gap-2 px-5 py-3.5 text-sm hover:bg-white/10 transition-colors duration-200"><span
+                    class="w-1 h-1 rounded-full bg-saffron"></span> Small &amp; Shared</a>
+                <a href="#menu" @click="menuDropdownOpen = false"
+                  class="flex items-center gap-2 px-5 py-3.5 text-sm hover:bg-white/10 transition-colors duration-200"><span
+                    class="w-1 h-1 rounded-full bg-saffron"></span> Drinks List</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#reservations"
+            class="text-sm font-medium tracking-wide transition-colors duration-300 link-underline"
+            :class="scrolled ? 'text-inkmute hover:text-ink' : 'text-paper/85 hover:text-paper'">Reservations</a>
+          <a href="#journal" class="text-sm font-medium tracking-wide transition-colors duration-300 link-underline"
+            :class="scrolled ? 'text-inkmute hover:text-ink' : 'text-paper/85 hover:text-paper'">Journal</a>
+          <a href="#contact" class="text-sm font-medium tracking-wide transition-colors duration-300 link-underline"
+            :class="scrolled ? 'text-inkmute hover:text-ink' : 'text-paper/85 hover:text-paper'">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <a href="#reservations"
+            class="hidden sm:inline-flex items-center gap-2 bg-paprika hover:bg-paprikad text-paper text-sm font-medium px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0">
+            Reserve a Table
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <button type="button" class="lg:hidden p-2 rounded-md transition-colors duration-300"
+            @click="mobileNavOpen = !mobileNavOpen" :aria-expanded="mobileNavOpen.toString()"
+            aria-label="Toggle navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 transition-colors duration-300"
+              :class="scrolled ? 'text-ink' : 'text-paper'" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <path x-show="!mobileNavOpen" stroke-linecap="round" stroke-linejoin="round"
+                d="M4 7h16M4 12h16M4 17h16" />
+              <path x-show="mobileNavOpen" x-cloak stroke-linecap="round" stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div x-cloak x-show="mobileNavOpen" x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 -translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+      x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      :class="scrolled ? 'lg:hidden bg-paper/98 backdrop-blur-xl border-t border-ink/5 shadow-2xl' : 'lg:hidden bg-ink/95 backdrop-blur-xl border-t border-white/10 shadow-2xl'">
+      <nav class="flex flex-col px-6 py-6" aria-label="Mobile Primary">
+        <a href="#story" @click="mobileNavOpen=false"
+          class="py-3.5 -mx-2 px-2 text-sm font-medium rounded-lg transition-colors duration-200"
+          :class="scrolled ? 'text-ink hover:bg-ink/5' : 'text-paper hover:bg-white/10'">Story</a>
+        <a href="#menu" @click="mobileNavOpen=false"
+          class="py-3.5 -mx-2 px-2 text-sm font-medium rounded-lg transition-colors duration-200"
+          :class="scrolled ? 'text-ink hover:bg-ink/5' : 'text-paper hover:bg-white/10'">Menu</a>
+        <a href="#reservations" @click="mobileNavOpen=false"
+          class="py-3.5 -mx-2 px-2 text-sm font-medium rounded-lg transition-colors duration-200"
+          :class="scrolled ? 'text-ink hover:bg-ink/5' : 'text-paper hover:bg-white/10'">Reservations</a>
+        <a href="#journal" @click="mobileNavOpen=false"
+          class="py-3.5 -mx-2 px-2 text-sm font-medium rounded-lg transition-colors duration-200"
+          :class="scrolled ? 'text-ink hover:bg-ink/5' : 'text-paper hover:bg-white/10'">Journal</a>
+        <a href="#contact" @click="mobileNavOpen=false"
+          class="py-3.5 -mx-2 px-2 text-sm font-medium rounded-lg transition-colors duration-200"
+          :class="scrolled ? 'text-ink hover:bg-ink/5' : 'text-paper hover:bg-white/10'">Contact</a>
+        <div class="mt-4">
+          <a href="#reservations" @click="mobileNavOpen=false"
+            class="block w-full text-center bg-paprika hover:bg-paprikad text-paper text-sm font-medium px-6 py-3.5 rounded-full transition-all duration-300 hover:shadow-lg">
+            Reserve a Table
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="relative h-svh min-h-160 flex items-end overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&auto=format&fit=crop&q=80"
+        alt="Chef plating a seasonal dish in the Dindin Kitchen open kitchen" width="1920" height="1280"
+        class="absolute inset-0 w-full h-full object-cover scale-105" x-ref="heroImage"
+        x-init="window.addEventListener('scroll', () => { const scrollY = window.scrollY; if ($refs.heroImage && scrollY < window.innerHeight) { $refs.heroImage.style.transform = `translateY(${scrollY * 0.4}px) scale(1.05)`; } });">
+      <div class="absolute inset-0 bg-linear-to-t from-ink via-ink/60 to-ink/10"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-24 sm:pb-32 w-full">
+        <div class="animate-slide-up">
+          <p class="font-mono text-xs tracking-[0.3em] uppercase text-saffron mb-6 flex items-center gap-3">
+            <span class="w-8 h-px bg-saffron/40"></span> Open Kitchen · Seasonal Table
+          </p>
+          <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl leading-[0.92] text-paper max-w-4xl">
+            Taste, <span class="italic text-saffron">slowly</span><span class="sr-only"> — Dindin Kitchen</span>
+          </h1>
+          <p class="mt-8 max-w-lg text-paper/70 text-base sm:text-lg leading-relaxed font-light">
+            A ten-table dining room built around what's in season this week — plated by hand, served without hurry.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#menu"
+              class="group inline-flex items-center gap-3 bg-paper text-ink font-medium pl-6 pr-5 py-4 rounded-full hover:bg-saffron transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0">
+              View Menu
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#reservations"
+              class="group inline-flex items-center gap-3 border border-paper/40 text-paper font-medium px-6 py-4 rounded-full hover:bg-paper/10 hover:border-paper/60 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 backdrop-blur-sm">
+              Book a Table
+              <span class="w-1.5 h-1.5 rounded-full bg-saffron animate-pulse-soft"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#story" aria-label="Scroll to discover more"
+        class="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-2 text-paper/50 hover:text-paper transition-colors duration-300 group">
+        <span class="text-[10px] tracking-[0.2em] uppercase">Discover</span>
+        <svg xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4 animate-bounce group-hover:animate-none transition-transform duration-300 group-hover:translate-y-1"
+          viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+            clip-rule="evenodd" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="py-28 sm:py-36 bg-paper relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-paprika/3 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
+      </div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
+        <div class="order-2 lg:order-1 animate-slide-up">
+          <p class="font-mono text-xs tracking-[0.25em] uppercase text-paprika mb-5 flex items-center gap-3">
+            <span class="w-6 h-px bg-paprika/40"></span> Our Story
+          </p>
+          <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.1] mb-8">
+            A table built around <span class="italic text-paprikad">what's ripe this week.</span>
+          </h2>
+          <div class="space-y-4 text-inkmute leading-relaxed text-base">
+            <p>Dindin Kitchen started as a Sunday supper club in a rented loft — twelve seats, one printed menu, no
+              walk-ins.</p>
+            <p>Six years on, the address changed but the rule didn't: we cook only what the market gives us that
+              morning. The kitchen sits in full view of the dining room, because we think watching dinner get made is
+              half the meal.</p>
+          </div>
+          <dl class="grid grid-cols-3 gap-8 border-t border-ink/10 pt-10 mt-10">
+            <div class="group cursor-default">
+              <dt
+                class="font-display text-4xl lg:text-5xl text-paprika mb-1 transition-transform duration-300 group-hover:scale-110 origin-left">
+                2019</dt>
+              <dd class="text-xs text-inkmute tracking-wide uppercase">Established</dd>
+            </div>
+            <div class="group cursor-default">
+              <dt
+                class="font-display text-4xl lg:text-5xl text-paprika mb-1 transition-transform duration-300 group-hover:scale-110 origin-left">
+                3</dt>
+              <dd class="text-xs text-inkmute tracking-wide uppercase">Dining Rooms</dd>
+            </div>
+            <div class="group cursor-default">
+              <dt
+                class="font-display text-4xl lg:text-5xl text-paprika mb-1 transition-transform duration-300 group-hover:scale-110 origin-left">
+                100%</dt>
+              <dd class="text-xs text-inkmute tracking-wide uppercase">Local Sourcing</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="order-1 lg:order-2 relative">
+          <div class="image-reveal rounded-2xl shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1000&auto=format&fit=crop&q=80"
+              alt="Chef preparing ingredients at Dindin Kitchen" width="1000" height="1250"
+              class="w-full h-105 sm:h-130 object-cover rounded-2xl">
+          </div>
+          <div
+            class="hidden sm:block absolute -bottom-10 -left-10 w-44 h-44 rounded-2xl overflow-hidden border-4 border-paper shadow-2xl rotate-3 card-lift">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300&auto=format&fit=crop&q=80"
+              alt="Fresh seasonal produce" width="300" height="300" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="py-28 sm:py-36 bg-ink text-paper relative overflow-hidden" x-data="{ active: 'mains' }">
+      <div class="absolute inset-0 opacity-[0.02]"
+        style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+        <div class="max-w-2xl mb-16">
+          <p class="font-mono text-xs tracking-[0.25em] uppercase text-saffron mb-5 flex items-center gap-3">
+            <span class="w-8 h-px bg-saffron/30"></span> Menu Highlights
+          </p>
+          <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">Tonight's <span
+              class="italic text-saffron">short list</span></h2>
+        </div>
+
+        <div role="tablist" aria-label="Menu categories"
+          class="flex flex-wrap gap-2 mb-14 p-1.5 bg-paper/5 rounded-full w-fit">
+          <template
+            x-for="cat in [{id:'starters', label:'Starters'},{id:'mains', label:'Mains'},{id:'desserts', label:'Desserts'},{id:'drinks', label:'Drinks'}]"
+            :key="cat.id">
+            <button type="button" role="tab" :aria-selected="(active === cat.id).toString()" @click="active = cat.id"
+              class="relative px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
+              :class="active === cat.id ? 'bg-saffron text-ink shadow-lg' : 'text-paper/60 hover:text-paper hover:bg-paper/5'"
+              x-text="cat.label"></button>
+          </template>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-8 lg:gap-10">
+          <div class="lg:col-span-2 relative bg-paper text-ink rounded-2xl overflow-hidden card-lift group">
+            <div class="relative h-72 image-reveal">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&auto=format&fit=crop&q=80"
+                alt="Featured seasonal dish, catch of the day" width="800" height="600"
+                class="w-full h-full object-cover">
+              <span
+                class="absolute top-5 left-5 -rotate-3 border-2 border-paprika text-paprika font-mono text-xs tracking-[0.2em] uppercase px-4 py-1.5 rounded-full bg-paper/95 backdrop-blur-sm shadow-lg">Catch
+                of the Day</span>
+            </div>
+            <div class="p-8">
+              <h3 class="font-display text-2xl mb-2 group-hover:text-paprika transition-colors duration-300">Charred Sea
+                Bream</h3>
+              <p class="text-sm text-inkmute leading-relaxed mb-8">Brown butter, roasted fennel, blood orange, toasted
+                almond.</p>
+              <div class="flex items-baseline gap-2 pt-4 border-t border-ink/5">
+                <span class="font-mono text-xs shrink-0 text-inkmute">Ask your server</span>
+                <span class="flex-1 leader-row-light"></span>
+                <span class="font-mono text-sm font-semibold shrink-0 text-paprika">Mkt.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-3 grid sm:grid-cols-2 gap-x-10 gap-y-6 content-start">
+            <div x-show="active==='starters'" x-cloak class="contents">
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Burrata
+                  &amp; Peach</h4>
+                <p class="text-xs text-paper/50 mb-3">Basil oil, sourdough crumb</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">98k</span></div>
+              </article>
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Charred
+                  Corn Soup</h4>
+                <p class="text-xs text-paper/50 mb-3">Smoked paprika oil, chive</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">78k</span></div>
+              </article>
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Beef
+                  Tartare</h4>
+                <p class="text-xs text-paper/50 mb-3">Egg yolk, capers, rye crisp</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">115k</span></div>
+              </article>
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Grilled
+                  Octopus</h4>
+                <p class="text-xs text-paper/50 mb-3">Chorizo, white bean purée</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">135k</span></div>
+              </article>
+            </div>
+            <div x-show="active==='mains'" x-cloak class="contents">
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Slow
+                  Roast Duck</h4>
+                <p class="text-xs text-paper/50 mb-3">Cherry jus, celeriac mash</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">215k</span></div>
+              </article>
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Handmade
+                  Tagliatelle</h4>
+                <p class="text-xs text-paper/50 mb-3">Brown butter, sage, parmesan</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">145k</span></div>
+              </article>
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Dry-Aged
+                  Ribeye</h4>
+                <p class="text-xs text-paper/50 mb-3">Bone marrow butter, greens</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">285k</span></div>
+              </article>
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Roasted
+                  Cauliflower</h4>
+                <p class="text-xs text-paper/50 mb-3">Tahini, pomegranate, herbs</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">125k</span></div>
+              </article>
+            </div>
+            <div x-show="active==='desserts'" x-cloak class="contents">
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Basque
+                  Cheesecake</h4>
+                <p class="text-xs text-paper/50 mb-3">Burnt honey, sea salt</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">85k</span></div>
+              </article>
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Dark
+                  Chocolate Tart</h4>
+                <p class="text-xs text-paper/50 mb-3">Espresso cream, hazelnut</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">80k</span></div>
+              </article>
+            </div>
+            <div x-show="active==='drinks'" x-cloak class="contents">
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Natural
+                  Wine, glass</h4>
+                <p class="text-xs text-paper/50 mb-3">Rotating list, ask server</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">65k</span></div>
+              </article>
+              <article class="group cursor-default p-3 -m-3 rounded-xl hover:bg-paper/5 transition-all duration-300">
+                <h4 class="font-display text-lg mb-1.5 group-hover:text-saffron transition-colors duration-300">Smoked
+                  Old Fashioned</h4>
+                <p class="text-xs text-paper/50 mb-3">House bitters, orange oil</p>
+                <div class="flex items-baseline gap-2"><span class="flex-1 leader-row-dark"></span><span
+                    class="font-mono text-sm text-saffron font-medium">95k</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 text-center">
+          <a href="#reservations"
+            class="group inline-flex items-center gap-3 text-saffron font-medium hover:text-saffron/80 transition-colors duration-300">
+            <span class="link-underline">View Full Menu &amp; Book a Table</span>
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservations -->
+    <section id="reservations" class="py-28 sm:py-36 bg-paperdim relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-64 h-64 bg-saffron/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl">
+      </div>
+      <div
+        class="absolute bottom-0 right-0 w-80 h-80 bg-paprika/5 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 lg:gap-20 items-stretch relative z-10">
+        <div class="bg-paper rounded-2xl p-10 sm:p-12 shadow-xl card-lift"
+          x-data="{ partySize: '2 Guests', partyOpen: false }">
+          <p class="font-mono text-xs tracking-[0.25em] uppercase text-paprika mb-3 flex items-center gap-3">
+            <span class="w-6 h-px bg-paprika/40"></span> Reservations
+          </p>
+          <h2 class="font-display text-3xl sm:text-4xl mb-10">Book your table</h2>
+
+          <form class="space-y-6"
+            @submit.prevent="alert('Reservation request submitted! We will contact you shortly.'); $el.reset(); partySize = '2 Guests';">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label for="res-name" class="block text-xs font-semibold tracking-wide uppercase text-inkmute">Full
+                  Name</label>
+                <input id="res-name" name="name" type="text" required placeholder="Jane Doe"
+                  class="w-full rounded-xl border border-ink/10 bg-paper px-4 py-3.5 text-sm placeholder:text-inkmute/40 focus:border-paprika focus:ring-4 focus:ring-paprika/10 outline-hidden transition-all duration-300">
+              </div>
+              <div class="space-y-2">
+                <label for="res-phone"
+                  class="block text-xs font-semibold tracking-wide uppercase text-inkmute">Phone</label>
+                <input id="res-phone" name="phone" type="tel" required placeholder="+62 812 0000 0000"
+                  class="w-full rounded-xl border border-ink/10 bg-paper px-4 py-3.5 text-sm placeholder:text-inkmute/40 focus:border-paprika focus:ring-4 focus:ring-paprika/10 outline-hidden transition-all duration-300">
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label for="res-date"
+                  class="block text-xs font-semibold tracking-wide uppercase text-inkmute">Date</label>
+                <input id="res-date" name="date" type="date" required
+                  class="w-full rounded-xl border border-ink/10 bg-paper px-4 py-3.5 text-sm focus:border-paprika focus:ring-4 focus:ring-paprika/10 outline-hidden transition-all duration-300">
+              </div>
+              <div class="space-y-2">
+                <label for="res-time"
+                  class="block text-xs font-semibold tracking-wide uppercase text-inkmute">Time</label>
+                <input id="res-time" name="time" type="time" required
+                  class="w-full rounded-xl border border-ink/10 bg-paper px-4 py-3.5 text-sm focus:border-paprika focus:ring-4 focus:ring-paprika/10 outline-hidden transition-all duration-300">
+              </div>
+            </div>
+            <div class="relative space-y-2">
+              <span class="block text-xs font-semibold tracking-wide uppercase text-inkmute">Party Size</span>
+              <button type="button" @click="partyOpen = !partyOpen" @keydown.escape="partyOpen=false"
+                :aria-expanded="partyOpen.toString()" aria-haspopup="listbox"
+                class="w-full flex items-center justify-between rounded-xl border border-ink/10 bg-paper px-4 py-3.5 text-sm text-left focus:border-paprika focus:ring-4 focus:ring-paprika/10 outline-hidden transition-all duration-300 hover:border-ink/20">
+                <span x-text="partySize" class="font-medium"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-inkmute transition-transform duration-300"
+                  :class="partyOpen && 'rotate-180'" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+              <ul x-cloak x-show="partyOpen" @click.outside="partyOpen=false" role="listbox"
+                x-transition:enter="transition ease-out duration-200"
+                x-transition:enter-start="opacity-0 translate-y-2 scale-95"
+                x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+                class="absolute z-20 mt-2 w-full rounded-xl bg-ink text-paper shadow-2xl overflow-hidden border border-white/10">
+                <template x-for="n in ['2 Guests','3 Guests','4 Guests','5 Guests','6 Guests','7+ Guests (call us)']"
+                  :key="n">
+                  <li role="option" @click="partySize = n; partyOpen = false"
+                    class="px-4 py-3 text-sm hover:bg-paper/10 cursor-pointer transition-colors duration-150 flex items-center gap-2"
+                    :class="partySize === n ? 'bg-paper/10 text-saffron' : ''" x-text="n"></li>
+                </template>
+              </ul>
+            </div>
+            <div class="space-y-2">
+              <label for="res-notes" class="block text-xs font-semibold tracking-wide uppercase text-inkmute">Notes
+                <span class="normal-case font-normal text-inkmute/50">(optional)</span></label>
+              <textarea id="res-notes" name="notes" rows="3" placeholder="Allergies, occasion, seating preference..."
+                class="w-full rounded-xl border border-ink/10 bg-paper px-4 py-3.5 text-sm placeholder:text-inkmute/40 focus:border-paprika focus:ring-4 focus:ring-paprika/10 outline-hidden transition-all duration-300 resize-none"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-paprika hover:bg-paprikad text-paper font-semibold py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 text-sm tracking-wide">
+              Confirm Reservation
+            </button>
+          </form>
+        </div>
+
+        <div class="relative rounded-2xl overflow-hidden min-h-80 image-reveal group">
+          <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1000&auto=format&fit=crop&q=80"
+            alt="Dindin Kitchen dining room interior" width="1000" height="1250"
+            class="absolute inset-0 w-full h-full object-cover">
+          <div
+            class="absolute inset-0 bg-linear-to-t from-ink/80 via-ink/30 to-transparent group-hover:from-ink/90 transition-colors duration-500">
+          </div>
+          <div class="absolute inset-4 border border-paper/10 rounded-xl pointer-events-none"></div>
+          <div class="relative z-10 p-10 h-full flex flex-col justify-end text-paper">
+            <p class="font-mono text-xs tracking-[0.2em] uppercase text-saffron mb-4">Visit Us</p>
+            <h3 class="font-display text-3xl mb-8">48 Marlow Lane</h3>
+            <ul class="space-y-5 text-sm">
+              <li class="flex gap-4 items-start">
+                <span class="w-8 h-8 rounded-full bg-paper/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-saffron" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </span>
+                <span class="text-paper/80 leading-relaxed">48 Marlow Lane, Bandung<br>West Java, Indonesia</span>
+              </li>
+              <li class="flex gap-4 items-start">
+                <span class="w-8 h-8 rounded-full bg-paper/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-saffron" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </span>
+                <span class="text-paper/80">Tue – Sun, 5:00 PM – 11:00 PM</span>
+              </li>
+              <li class="flex gap-4 items-start">
+                <span class="w-8 h-8 rounded-full bg-paper/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-saffron" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </span>
+                <span class="text-paper/80">+62 22 555 0148</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal -->
+    <section id="journal" class="py-28 sm:py-36 bg-paper">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex flex-wrap items-end justify-between gap-8 mb-16">
+          <div class="max-w-xl">
+            <p class="font-mono text-xs tracking-[0.25em] uppercase text-paprika mb-5 flex items-center gap-3">
+              <span class="w-6 h-px bg-paprika/40"></span> Journal
+            </p>
+            <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">Notes from <span
+                class="italic text-paprikad">the pass</span></h2>
+          </div>
+          <a href="#" class="group inline-flex items-center gap-2 text-sm font-medium text-paprika">
+            <span class="link-underline">All Stories</span>
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+          <article
+            class="group card-lift bg-paper rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+            <div class="image-reveal h-56">
+              <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=700&auto=format&fit=crop&q=80"
+                alt="Farmers market produce stall" width="700" height="400" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <p class="font-mono text-xs text-inkmute/60 mb-3">March 14, 2026 <span
+                  class="mx-2 text-inkmute/30">·</span> Sourcing</p>
+              <h3
+                class="font-display text-xl mb-2 group-hover:text-paprika transition-colors duration-300 leading-snug">
+                Why We Only Plan the Menu at 6AM</h3>
+              <p class="text-sm text-inkmute leading-relaxed mb-4">Inside our Tuesday market runs, and why the printed
+                menu changes every single week.</p>
+              <span
+                class="inline-flex items-center gap-1.5 text-sm font-medium text-paprika group-hover:gap-2 transition-all duration-300">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article
+            class="group card-lift bg-paper rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+            <div class="image-reveal h-56">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&auto=format&fit=crop&q=80"
+                alt="Close up of hands preparing dough" width="700" height="400" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <p class="font-mono text-xs text-inkmute/60 mb-3">Feb 28, 2026 <span class="mx-2 text-inkmute/30">·</span>
+                Press</p>
+              <h3
+                class="font-display text-xl mb-2 group-hover:text-paprika transition-colors duration-300 leading-snug">
+                Named One to Watch, Bandung Eats Guide</h3>
+              <p class="text-sm text-inkmute leading-relaxed mb-4">A look back at how a twelve-seat supper club turned
+                into three dining rooms.</p>
+              <span
+                class="inline-flex items-center gap-1.5 text-sm font-medium text-paprika group-hover:gap-2 transition-all duration-300">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article
+            class="group card-lift bg-paper rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+            <div class="image-reveal h-56">
+              <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&auto=format&fit=crop&q=80"
+                alt="Chef plating a dessert course" width="700" height="400" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <p class="font-mono text-xs text-inkmute/60 mb-3">Feb 10, 2026 <span class="mx-2 text-inkmute/30">·</span>
+                Behind the Pass</p>
+              <h3
+                class="font-display text-xl mb-2 group-hover:text-paprika transition-colors duration-300 leading-snug">
+                The Five-Ingredient Rule</h3>
+              <p class="text-sm text-inkmute leading-relaxed mb-4">Our head chef on the house discipline that keeps
+                every plate honest.</p>
+              <span
+                class="inline-flex items-center gap-1.5 text-sm font-medium text-paprika group-hover:gap-2 transition-all duration-300">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-ink text-paper/70 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-paprika/5 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl">
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
+      <div>
+        <span class="font-display text-2xl text-paper">Dindin <span class="italic text-saffron">Kitchen</span></span>
+        <p class="mt-5 text-sm leading-relaxed max-w-xs text-paper/60">A ten-table dining room in Bandung, cooking only
+          what's in season this week.</p>
+        <div class="flex gap-3 mt-8">
+          <a href="#" aria-label="Instagram"
+            class="w-10 h-10 flex items-center justify-center rounded-full border border-paper/15 hover:bg-paper/10 hover:border-paper/30 transition-all duration-300 hover:-translate-y-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="3.5" />
+              <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook"
+            class="w-10 h-10 flex items-center justify-center rounded-full border border-paper/15 hover:bg-paper/10 hover:border-paper/30 transition-all duration-300 hover:-translate-y-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.6">
+              <path d="M14 9h3V6h-3a4 4 0 00-4 4v2H8v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 011-1z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="X"
+            class="w-10 h-10 flex items-center justify-center rounded-full border border-paper/15 hover:bg-paper/10 hover:border-paper/30 transition-all duration-300 hover:-translate-y-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.6">
+              <path d="M4 4l16 16M20 4L4 20" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-paper text-xs font-semibold tracking-[0.15em] uppercase mb-6">Explore</h4>
+        <ul class="space-y-3.5 text-sm">
+          <li><a href="#story" class="hover:text-saffron transition-colors duration-200 inline-block link-underline">Our
+              Story</a></li>
+          <li><a href="#menu"
+              class="hover:text-saffron transition-colors duration-200 inline-block link-underline">Menu</a></li>
+          <li><a href="#reservations"
+              class="hover:text-saffron transition-colors duration-200 inline-block link-underline">Reservations</a>
+          </li>
+          <li><a href="#journal"
+              class="hover:text-saffron transition-colors duration-200 inline-block link-underline">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-paper text-xs font-semibold tracking-[0.15em] uppercase mb-6">Contact</h4>
+        <ul class="space-y-3.5 text-sm text-paper/60">
+          <li>48 Marlow Lane, Bandung</li>
+          <li>West Java, Indonesia</li>
+          <li class="pt-1">+62 22 555 0148</li>
+          <li>hello@dindinkitchen.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-paper text-xs font-semibold tracking-[0.15em] uppercase mb-6">Stay in the Loop</h4>
+        <p class="text-sm mb-5 text-paper/60">Seasonal menu drops and one-night events, once a month.</p>
+        <form class="flex" @submit.prevent="$el.reset(); alert('Thank you for subscribing!')">
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input id="newsletter-email" type="email" required placeholder="you@email.com"
+            class="min-w-0 flex-1 rounded-l-full bg-paper/5 border border-paper/15 px-5 py-3 text-sm placeholder:text-paper/30 focus:border-saffron focus:bg-paper/10 outline-hidden transition-all duration-300">
+          <button type="submit" aria-label="Subscribe"
+            class="shrink-0 bg-saffron hover:bg-saffron/90 text-ink px-5 rounded-r-full transition-all duration-300 hover:shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="border-t border-paper/5 relative z-10">
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-10 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-paper/40">
+        <p>&copy; 2026 Dindin Kitchen. All rights reserved.</p>
+        <div class="flex gap-8">
+          <a href="#" class="hover:text-paper/70 transition-colors duration-200">Privacy Policy</a>
+          <a href="#" class="hover:text-paper/70 transition-colors duration-200">Terms of Service</a>
+        </div>
+        <p>Designed by <a href="https://www.dindindesign.com/" target="_blank" rel="noopener noreferrer"
+            class="text-paper/50 hover:text-saffron underline underline-offset-2 transition-colors duration-200">Dindin
+            Design</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
